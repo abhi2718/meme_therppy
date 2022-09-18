@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "352046437979",
+    "project_id": "meme-therapy-fa14d",
+    "storage_bucket": "meme-therapy-fa14d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352046437979:android:bfb8a14de310ec4373d17e",
+        "android_client_info": {
+          "package_name": "com.meme_therappy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352046437979-t6bbpfoklrk4vjeau3r3rsqokpac5cin.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.meme_therappy",
+            "certificate_hash": "76f2dd83f2c592bd2cd961f13345a2e68c223cbc"
+          }
+        },
+        {
+          "client_id": "352046437979-v4a2a081vtr9uvqvmlcije7h9n0v3uba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGgUr0bl-2az-iILDIx0c4oYLzY_hLt9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352046437979-v4a2a081vtr9uvqvmlcije7h9n0v3uba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
