@@ -1,7 +1,7 @@
 import React,{useEffect} from "react";
-import {SafeAreaView,StyleSheet,Image,View} from 'react-native';
+import {SafeAreaView,StyleSheet,Image,View,Button} from 'react-native';
 import Simple from '../components/swiper';
-
+import ImagePicker from 'react-native-image-crop-picker';
 const stream = require('getstream');
 export const HomeScreen=()=>{
   useEffect(()=>{
@@ -16,7 +16,16 @@ export const HomeScreen=()=>{
   });
     return(
       <SafeAreaView style={styles.container}>
-      <Simple />
+      {/* <Simple /> */}
+      <Button onPress={()=>{
+          ImagePicker.openPicker({
+            width: 300,
+            height: 400,
+            cropping: true
+          }).then(image => {
+            console.log(image);
+          });
+      }} title="Upload" />
       </SafeAreaView>
     );
 }
