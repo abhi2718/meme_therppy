@@ -192,7 +192,8 @@ export const SignInScreen = ({navigation}) => {
               style={{backgroundColor: 'green'}}
               contentStyle={styles.btnStyle}
               onPress={() => {
-                signIn();
+                //signIn();
+                navigation.navigate('home');
               }}>
               Sign In
             </Button>

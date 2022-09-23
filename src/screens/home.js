@@ -8,6 +8,8 @@ const stream = require('getstream');
 const Row = styled.View`
   flex-direction: row;
   justify-content: space-between;
+  width: 300px;
+  margin-bottom: 30px;
 `;
 export const HomeScreen = () => {
   const customShare = async () => {

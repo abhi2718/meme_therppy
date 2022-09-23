@@ -22,6 +22,7 @@ import {
   Modal,
 } from 'react-native';
 import styled from 'styled-components';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import SelectDropdown from 'react-native-select-dropdown';
 import {TextInput, Button} from 'react-native-paper';
 import {Spacer} from '../../components/spacer';

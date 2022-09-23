@@ -8,10 +8,10 @@ export const AppNavigator = () => {
   const dispatch = useDispatch();
   useEffect(()=>{
     setTimeout(() => {
-        dispatch(getResourceAction(1));
+        //dispatch(getResourceAction(1));
     }, 2000);
   },[])
-  if(loading){
+  if(0){
     return <SplashScreen/>
   }else{
     return <HomeNavigator/>;
