@@ -7,35 +7,6 @@ import {rootReducer} from './src/store/reducers/root_reducer/root.reducer';
 import Navigator from './src/navigation/index';
 const App = () => {
   const store = createStore(rootReducer, applyMiddleware(thunk));
-  useEffect(()=>{
-    const fetchData = async () => {
-      try {
-        const response = await fetch('https://reqres.in/api/users?page=2',{
-          method: 'GET',
-          headers: new Headers({
-            'Content-Type': 'application/json',
-          }),
-        });
-        const data = await response.json();
-        if(response.statusCode === 200){
-           console.log('data is',data);
-        }else{
-          console.log('data is from else',data);
-        }
-      } catch (error) {
-        alert('Network request failed');
-        console.log('error is',error);
-        // if (error.message === 'Network request failed') {
-        //   // retry or any other handling like showing alert 
-        //   alert('Network request failed');
-        // } else {
-        //   console.log('error',error);
-        //   throw e; 
-        // }
-      }
-    }
-    fetchData();
-  },[])
   return (
     <>
       <StatusBar backgroundColor={'#1481D0'} barStyle={'dark-content'} />
